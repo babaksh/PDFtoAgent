@@ -18,19 +18,25 @@
 
 Traditional **Retrieval-Augmented Generation (RAG)** turns books into static text chunks. When you ask an ordinary RAG system to evaluate mathematical rules or multi-step algorithmic strategies, it resorts to **probabilistic token guessing**—frequently hallucinating calculations, miscalculating percentages, and failing to execute rigorous domain procedures.
 
-**PDFtoAgent** introduces an autonomous compilation pipeline: It digests domain textbooks line-by-line, synthesizes **deterministic, executable Python tools** for every algorithm in the text, verifies them in an isolated **Zero-Trust Docker Sandbox**, and packages the knowledge base, vector index, and tool library into an enterprise-grade **Model Context Protocol (MCP)** server.
+**PDFtoAgent** solves this by transforming technical literature into a cohesive **Triad-Architecture MCP Server (RAG + Domain Skill + Deterministic Tools)**:
+
+1. 📚 **Chapter-Level Vector RAG:** Complete semantic retrieval index with exact page citations and chunk boundaries.
+2. 🧠 **Codified Domain Skill (`SKILL.md`):** Complete system instructions, procedural decision trees, and domain-specific execution guidelines.
+3. ⚙️ **Deterministic Python Tools:** Verified, executable Python algorithms running in an isolated Zero-Trust Docker sandbox to compute exact mathematics with zero hallucinations.
 
 ```
 ┌────────────────────────────────────────────────────────────────────────┐
 │                      ORDINARY RAG vs PDFTOAGENT                        │
 ├────────────────────────────────────────────────────────────────────────┤
-│        Traditional RAG               PDFtoAgent Autonomous Agent       │
+│        Traditional RAG               PDFtoAgent Unified MCP Agent      │
+│        (Text Chunks Only)            (Vector RAG + Skill + Tools)      │
 ├────────────────────────────────────────────────────────────────────────┤
 │ ❌ Probabilistic word guessing ✅ Deterministic Python code execution │
 │ ❌ Frequent calculation errors ✅ Exact mathematical computation      │
+│ ❌ No procedural guidance      ✅ Codified Domain Skill (SKILL.md)     │
 │ ❌ Blind trust in model output ✅ Zero-trust Docker sandbox gate      │
 │ ❌ Context window overflows    ✅ Progressive Disclosure Tool Router  │
-│ ❌ Opaque, unverified answers  ✅ Enterprise provenance & grounding   │
+│ ❌ Opaque, unverified answers  ✅ Exact chapter & page provenance     │
 └────────────────────────────────────────────────────────────────────────┘
 ```
 
@@ -77,9 +83,13 @@ PDFtoAgent employs a multi-tier verification pipeline to ensure every synthesize
 
 To demonstrate this architecture, I compiled William Peter Hamilton's 1922 classic, **"The Stock Market Barometer"** (the foundational text of Dow Theory, now in the Public Domain), into a production-ready MCP Agent.
 
-* **100+ Quantitative Trading Tools:** Double top/bottom detectors, 3/8ths retracement rules, primary/secondary trend classifiers, line formation breakout tests, and speculative volume balance metrics.
-* **Progressive Disclosure:** Exposes only 3 router meta-tools (`search_tools`, `get_tool`, `run_tool`) so the LLM context window never gets overloaded.
-* **Public Domain Compliance:** 100% legal, non-infringing, and open for global use under 17 U.S.C. § 105/304.
+The delivered package is a turnkey, multi-component showcase:
+
+* 📚 **Full-Book Chapter-by-Chapter Vector RAG:** Comprehensive semantic search across all 24 chapters with exact page-level citations (`sqlite-vec` + local embeddings).
+* 🧠 **Specialized Dow Theory Domain Skill (`SKILL.md`):** Deep codified market philosophy, rule interpretation protocols, and procedural decision trees directly distilled from Hamilton's work.
+* ⚙️ **100+ Quantitative Trading Tools:** Verified, deterministic Python calculations including double top/bottom detectors, 3/8ths retracement rules, primary/secondary trend classifiers, line formation breakout tests, and speculative volume balance metrics.
+* 🎛️ **Progressive Disclosure Router:** Exposes only 3 lightweight router meta-tools (`search_tools`, `get_tool`, `run_tool`) so the LLM context window never gets overloaded regardless of tool count.
+* ⚖️ **Public Domain Compliance:** 100% legal, non-infringing, and open for global use under 17 U.S.C. § 105/304.
 
 ---
 
