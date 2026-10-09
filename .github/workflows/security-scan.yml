@@ -23,7 +23,7 @@ jobs:
       - name: Run Aqua Security Trivy Scanner (Docker Hub Image)
         uses: aquasecurity/trivy-action@master
         with:
-          image-ref: 'babaksh/pdftoagent-stock-market-barometer-hamilton:latest'
+          image-ref: 'babak60/pdftoagent-stock-market-barometer-hamilton:latest'
           format: 'table'
           exit-code: '0'
           ignore-unfixed: false
@@ -32,7 +32,7 @@ jobs:
       - name: Generate SARIF Security Report
         uses: aquasecurity/trivy-action@master
         with:
-          image-ref: 'babaksh/pdftoagent-stock-market-barometer-hamilton:latest'
+          image-ref: 'babak60/pdftoagent-stock-market-barometer-hamilton:latest'
           format: 'sarif'
           output: 'trivy-results.sarif'
           severity: 'CRITICAL,HIGH'

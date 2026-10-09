@@ -3,7 +3,7 @@
 > **Turn domain literature into executable AI Agents with deterministic Python tools served over MCP — available as a Zero-Docker Windows Portable package & Docker container.**
 
 [![Portable Windows](https://img.shields.io/badge/Windows%20Portable-Zero--Docker%20.zip-brightgreen?logo=windows)](https://github.com/babaksh/PDFtoAgent/raw/main/dist/PDFtoAgent-Portable-stock-market-barometer-hamilton.zip)
-[![Docker Hub](https://img.shields.io/badge/Docker%20Hub-babaksh-blue?logo=docker)](https://hub.docker.com/u/babaksh)
+[![Docker Hub](https://img.shields.io/badge/Docker%20Hub-babak60-blue?logo=docker)](https://hub.docker.com/u/babak60)
 [![Protocol](https://img.shields.io/badge/MCP-Streamable--HTTP-purple)](https://modelcontextprotocol.io)
 [![Python](https://img.shields.io/badge/Python-3.12-brightgreen?logo=python)](https://python.org)
 [![Author](https://img.shields.io/badge/Maintained%20by-Babak-black?logo=github)](https://github.com/babaksh)
@@ -187,7 +187,7 @@ docker run -d --restart unless-stopped --name pdftoagent-stock-market-barometer-
   -e OLLAMA_EMBEDDING_HOST=http://host.docker.internal:11434 \
   -e OLLAMA_EMBEDDING_MODEL=nomic-embed-text:v1.5 \
   -e MCP_TRANSPORT=streamable-http \
-  babaksh/pdftoagent-stock-market-barometer-hamilton:latest
+  babak60/pdftoagent-stock-market-barometer-hamilton:latest
 ```
 
 ##### Linux:
@@ -199,7 +199,7 @@ docker run -d --restart unless-stopped --name pdftoagent-stock-market-barometer-
   -e OLLAMA_EMBEDDING_HOST=http://host.docker.internal:11434 \
   -e OLLAMA_EMBEDDING_MODEL=nomic-embed-text:v1.5 \
   -e MCP_TRANSPORT=streamable-http \
-  babaksh/pdftoagent-stock-market-barometer-hamilton:latest
+  babak60/pdftoagent-stock-market-barometer-hamilton:latest
 ```
 
 ##### Health Check & Container Management:
@@ -391,7 +391,7 @@ Format the response into an executive dashboard with status badges, numerical sw
 
 | Agent / Domain | Source Book | Status | Distribution Formats |
 | :--- | :--- | :--- | :--- |
-| **Dow Theory Quantitative Engine** | *The Stock Market Barometer* (1922) | 🟢 **Available** | 📦 **[Download Portable .zip](https://github.com/babaksh/PDFtoAgent/raw/main/dist/PDFtoAgent-Portable-stock-market-barometer-hamilton.zip)**<br>🐳 `babaksh/pdftoagent-stock-market-barometer-hamilton` |
+| **Dow Theory Quantitative Engine** | *The Stock Market Barometer* (1922) | 🟢 **Available** | 📦 **[Download Portable .zip](https://github.com/babaksh/PDFtoAgent/raw/main/dist/PDFtoAgent-Portable-stock-market-barometer-hamilton.zip)**<br>🐳 `babak60/pdftoagent-stock-market-barometer-hamilton` |
 | **Tape Reading & Speculation** | *Reminiscences of a Stock Operator* (1923) | 🟡 In Pipeline | Portable .zip + Docker |
 | **Market Cycles & Price Structure** | *Richard D. Wyckoff Method* (1910–1931) | 🟡 In Pipeline | Portable .zip + Docker |
 | **Classical Scientific & Medical Reference** | Foundational Domain Treatises | ⚪ Planned | Portable .zip + Docker |
