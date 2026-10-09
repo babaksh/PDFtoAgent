@@ -33,7 +33,7 @@ Traditional **Retrieval-Augmented Generation (RAG)** turns books into static tex
 ├────────────────────────────────────────────────────────────────────────┤
 │ ❌ Probabilistic word guessing ✅ Deterministic Python code execution │
 │ ❌ Frequent calculation errors ✅ Exact mathematical computation      │
-│ ❌ No procedural guidance      ✅ Codified Domain Skill (SKILL.md)     │
+│ ❌ No procedural guidance      ✅ Codified Domain Skill (SKILL.md)    │
 │ ❌ Blind trust in model output ✅ Zero-trust Docker sandbox gate      │
 │ ❌ Context window overflows    ✅ Progressive Disclosure Tool Router  │
 │ ❌ Opaque, unverified answers  ✅ Exact chapter & page provenance     │
