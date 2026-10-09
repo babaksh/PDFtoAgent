@@ -95,8 +95,8 @@ Choose the execution method that best fits your environment:
 
 | Execution Method | Target Platform | Prerequisites | Setup Effort |
 | :--- | :--- | :--- | :--- |
-| **[⚡ Method 1: Standalone Portable Bundle](#-method-1-standalone-portable-bundle-recommended-for-windows)** | **Windows (10 / 11)** | **None** (Zero Docker, Zero Python) | 🟢 **1-Click Launch (`run_server.bat`)** |
-| **[🐳 Method 2: Docker Container Image](#-method-2-docker-container-image-cross-platform)** | **macOS / Linux / Windows** | Docker Desktop & Ollama | 🟡 Standard Container Run |
+| **[⚡ Method 1: Standalone Portable Bundle](#-method-1-standalone-portable-bundle-recommended-for-windows)** | **Windows (10 / 11)** | Ollama (only for RAG embeddings; auto-handled by script) | 🟢 **1-Click Launch (`run_server.bat`)** |
+| **[🐳 Method 2: Docker Container Image](#-method-2-docker-container-image-cross-platform)** | **macOS / Linux / Windows** | Docker Desktop & Ollama (only for RAG embeddings) | 🟢 **Standard Container Run** |
 
 ---
 
