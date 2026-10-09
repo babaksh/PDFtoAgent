@@ -138,7 +138,7 @@ Double-click **`run_server.bat`**. The intelligent PowerShell launcher automates
 #### Step 1.3: Connect Your Favorite AI Client
 Once `run_server.bat` is running, your MCP server is listening at `http://127.0.0.1:8765/mcp`. You can connect **Claude Desktop**, **Google Antigravity**, **ChatGPT Desktop**, **Cursor**, or **OpenClaw** in seconds.
 
-Follow the simple step-by-step instructions in **[Section 3: Connect to Your Agentic Apps](#3-connect-to-your-agentic-apps)** below or open `README.txt` inside your extracted folder for ready-to-paste snippets and UI walkthroughs for each client.
+👉 Refer to **`README.txt`** inside your extracted folder or see the complete **[Client Connection Guide (CONNECTING_APPS.md)](CONNECTING_APPS.md)** for ready-to-paste JSON configs and UI steps.
 
 #### Step 1.4 (Optional): Zero-RAM Cloud Embeddings Mode
 By default, the server runs completely offline using local Ollama embeddings (~500 MB RAM). If you prefer cloud embeddings with **0 MB local RAM usage**:
@@ -210,130 +210,9 @@ docker run -d --restart unless-stopped --name pdftoagent-stock-market-barometer-
 
 ### 3. Connect to Your Agentic Apps
 
-Because the server exposes a standardized **Streamable HTTP** MCP endpoint at `http://127.0.0.1:8765/mcp` (or `http://localhost:8765/mcp`), you can plug it into any modern agentic application or AI IDE. Choose your client below:
+Once the server is running (via Portable `.bat` or Docker), it listens on `http://127.0.0.1:8765/mcp`.
 
-#### 3.1 Claude Desktop
-
-Claude Desktop connects to HTTP MCP servers using the `mcp-remote` bridge.
-
-* **Locate Configuration File:**
-  * **Windows (Standard):** `%APPDATA%\Claude\claude_desktop_config.json`
-  * **Windows (Microsoft Store package):** `C:\Users\<YourUsername>\AppData\Local\Packages\Claude_pzs8sxrjxfjjc\LocalCache\Roaming\Claude\claude_desktop_config.json`
-  * **macOS:** `~/Library/Application Support/Claude/claude_desktop_config.json`
-  * *(Or access directly via Claude Desktop: `Settings ➔ Developer ➔ Edit Config`)*
-
-* **Add Configuration:**
-  ```json
-  {
-    "mcpServers": {
-      "Stock_Market_Barometer_Hamilton": {
-        "command": "npx",
-        "args": [
-          "-y",
-          "mcp-remote",
-          "http://127.0.0.1:8765/mcp"
-        ]
-      }
-    }
-  }
-  ```
-  *(Requires Node.js installed for `npx`). Restart Claude Desktop and look for the hammer icon 🔨.*
-
----
-
-#### 3.2 ChatGPT Desktop (macOS & Windows)
-
-You can connect ChatGPT Desktop directly via the user interface or config file.
-
-* **Via In-App Settings:**
-  1. Open the ChatGPT Desktop app.
-  2. Navigate to **Settings** (`Ctrl + ,` on Windows or `Cmd + ,` on macOS) ➔ **Apps & Connectors** (or **Plugins / Advanced**).
-  3. Click **Add MCP Server**.
-  4. Enter the connection parameters:
-     * **Transport / Type:** `Streamable HTTP`
-     * **Name:** `Stock_Market_Barometer_Hamilton`
-     * **URL:** `http://localhost:8765/mcp`
-  5. Click **Connect / Save**.
-
-* **Via Configuration File:**
-  ```json
-  {
-    "mcpServers": {
-      "Stock_Market_Barometer_Hamilton": {
-        "url": "http://localhost:8765/mcp",
-        "transport": "streamable-http"
-      }
-    }
-  }
-  ```
-
----
-
-#### 3.3 Google Antigravity
-
-Antigravity natively connects to Streamable HTTP MCP endpoints.
-
-* **Locate Configuration File:**
-  * **Windows:** `%USERPROFILE%\.gemini\config\mcp_config.json`
-  * **macOS / Linux:** `~/.gemini/config/mcp_config.json`
-  * *(Or via UI: `Settings ➔ Antigravity ➔ MCP Servers ➔ Add Server`)*
-
-* **Add Configuration:**
-  ```json
-  {
-    "mcpServers": {
-      "Stock_Market_Barometer_Hamilton": {
-        "serverUrl": "http://127.0.0.1:8765/mcp"
-      }
-    }
-  }
-  ```
-
----
-
-#### 3.4 OpenClaw
-
-Configure OpenClaw by adding the server block to your `openclaw.json` config file:
-
-* **Locate Configuration File:**
-  * **Windows:** `%USERPROFILE%\.openclaw\openclaw.json`
-  * **macOS / Linux:** `~/.openclaw/openclaw.json`
-
-* **Add Configuration:**
-  ```json
-  {
-    "mcp": {
-      "servers": {
-        "Stock_Market_Barometer_Hamilton": {
-          "url": "http://localhost:8765/mcp",
-          "transport": "streamable-http"
-        }
-      }
-    }
-  }
-  ```
-
----
-
-#### 3.5 Cursor, Windsurf & Other AI IDEs
-
-* **Via Cursor Settings UI:**
-  1. Open **Cursor Settings** (`Ctrl + Shift + J` or `Cmd + Shift + J`).
-  2. Navigate to **Features** ➔ **MCP Servers**.
-  3. Click **+ Add New MCP Server**.
-  4. Select **Type:** `SSE` / `HTTP` (Streamable HTTP).
-  5. Set **Name:** `Stock_Market_Barometer_Hamilton` and **URL:** `http://localhost:8765/mcp`.
-
-* **Via Project / Global MCP Config (`.cursor/mcp.json`):**
-  ```json
-  {
-    "mcpServers": {
-      "Stock_Market_Barometer_Hamilton": {
-        "url": "http://localhost:8765/mcp"
-      }
-    }
-  }
-  ```
+👉 **For complete step-by-step setup walkthroughs and ready-to-paste configurations for Claude Desktop, ChatGPT, Google Antigravity, Cursor, and OpenClaw, see the [Client Connection Guide (CONNECTING_APPS.md)](CONNECTING_APPS.md)** *(also included inside the Portable bundle as `README.txt`)*.
 
 ---
 
