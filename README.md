@@ -20,9 +20,9 @@ Traditional **Retrieval-Augmented Generation (RAG)** turns books into static tex
 
 **PDFtoAgent** solves this by transforming technical literature into a cohesive **Triad-Architecture MCP Server (RAG + Domain Skill + Deterministic Tools)**:
 
-1. 📚 **Chapter-Level Vector RAG:** Complete semantic retrieval index with exact page citations and chunk boundaries.
-2. 🧠 **Codified Domain Skill (`SKILL.md`):** Complete system instructions, procedural decision trees, and domain-specific execution guidelines.
-3. ⚙️ **Deterministic Python Tools:** Verified, executable Python algorithms running in an isolated Zero-Trust Docker sandbox to compute exact mathematics with zero hallucinations.
+1. 📚 **Chapter-Level Vector RAG:** Semantic search with page citations, tables, and book figures/charts.
+2. 🧠 **Codified Domain Skill (`SKILL.md`):** Procedural guidelines, decision trees, and expert system instructions.
+3. ⚙️ **Deterministic Python Tools:** Verified executable algorithms running in sandboxes with zero math hallucinations.
 
 ```
 ┌────────────────────────────────────────────────────────────────────────┐
@@ -70,12 +70,6 @@ PDFtoAgent employs a multi-tier verification pipeline to ensure every synthesize
                                   ▼
         Dual Distribution: Portable Windows Zip (.bat) & Docker
 ```
-
-* **Tier-1 (Planner & Value Gate):** Mandates exact quoted sentences from the source text before authorizing any tool creation. No direct quote = No invented tool.
-* **Tier-2 (Writer & Docker Sandbox Gate):** Recomputes tool outputs in an isolated Docker sandbox (`--network none`, non-root). It never trusts the generator's self-reported results.
-* **Tier-2.5 (Adversarial Robustness Gate):** Probes each tool against degenerate inputs (constant flat series, all zeros) without LLM tokens to detect dead parameters, inverted directions, and uncaught exceptions.
-* **Tier-3 (Independent LLM Judge):** Validates algorithmic fidelity against the chapter's cited rules.
-* **Tier-4 (Provenance Audit):** Enforces enterprise-grade metadata, clearly tagging what is `source_grounded` versus `model_extrapolated`.
 
 ---
 
@@ -211,31 +205,6 @@ docker run -d --restart unless-stopped --name pdftoagent-stock-market-barometer-
   -e MCP_TRANSPORT=streamable-http \
   babak60/pdftoagent-stock-market-barometer-hamilton:latest
 ```
-
-##### Health Check & Container Management:
-* **Check Server Logs:**
-  ```bash
-  docker logs -f pdftoagent-stock-market-barometer-hamilton
-  ```
-  *(You should see that the FastMCP server is listening on port `8765`).*
-
-* **Stop the Server:**
-  ```bash
-  docker stop pdftoagent-stock-market-barometer-hamilton
-  ```
-
-* **Start the Server Again (Anytime):**
-  ```bash
-  docker start pdftoagent-stock-market-barometer-hamilton
-  ```
-
-* **Remove Container Completely (When Uninstalling or Updating):**
-  ```bash
-  docker rm -f pdftoagent-stock-market-barometer-hamilton
-  ```
-
-> 💡 **Auto-Start on Boot:**
-> Thanks to the `--restart unless-stopped` flag, Docker automatically launches the container in the background whenever your system or Docker Desktop boots up. You only have to run the initial command once! If you ever manually run `docker stop`, Docker will respect that and keep it paused until you start it again.
 
 ---
 
