@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "Stock_Market_Barometer_Hamilton": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-remote",
+        "http://127.0.0.1:8765/mcp"
+      ]
+    }
+  }
+}

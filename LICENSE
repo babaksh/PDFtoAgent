@@ -1,0 +1,60 @@
+PDFtoAgent Community & Research License (Non-Commercial)
+Version 1.0 — October 2026
+
+Copyright (c) 2026 Babak (@babaksh). All rights reserved.
+
+================================================================================
+TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION, AND USE
+================================================================================
+
+1. GRANT OF LICENSE (PERSONAL, RESEARCH & EDUCATIONAL USE)
+   Subject to the terms and restrictions set forth in this License, you are 
+   hereby granted a free, non-exclusive, non-transferable, and revocable license 
+   to download, run, test, evaluate, and inspect the pre-compiled container images, 
+   configuration files, and sample datasets provided in this repository strictly 
+   for:
+   a) Personal, individual learning and exploration.
+   b) Academic, scientific, or educational research.
+   c) Non-commercial proof-of-concept testing.
+
+2. COMMERCIAL USE AND REDISTRIBUTION RESTRICTIONS
+   Unless explicitly authorized under a separate commercial license agreement 
+   in writing by the copyright holder, you may NOT:
+   a) Sell, rent, lease, sublicense, distribute, or commercially exploit this 
+      software, computational tool library, vector database, or container image(s).
+   b) Host, deploy, or operate this software or container as a paid cloud service, 
+      Software-as-a-Service (SaaS), Platform-as-a-Service (PaaS), or public/private 
+      commercial API.
+   c) Repackage, rebrand, or bundle these container images or extracted algorithmic 
+      tools into any proprietary, commercial, or revenue-generating product.
+   d) Reverse engineer, decompile, or disassemble the container image binaries for 
+      the purpose of recreating commercial derivative works.
+
+3. ENTERPRISE & COMMERCIAL LICENSING
+   If you wish to use this software in a production, enterprise, or commercial 
+   environment, or if you require custom agent compilation, on-premise air-gapped 
+   deployments, or proprietary IP integration, please contact the author directly 
+   via GitHub: https://github.com/babaksh
+
+4. PUBLIC DOMAIN ATTRIBUTION & IP CLARIFICATION
+   The theoretical foundations and qualitative principles referenced within this 
+   package originate from historical public domain literature (including 'The Stock 
+   Market Barometer' by William Peter Hamilton, 1922). 
+   No copyright is claimed over the underlying public domain text. This license 
+   exclusively governs and protects the original software engineering work, including 
+   algorithmic implementations, deterministic tool synthesis, vector embeddings, 
+   knowledge graphs, FastMCP server architecture, and containerized runtime packages 
+   created by the copyright holder.
+
+5. DISCLAIMER OF WARRANTY & LIMITATION OF LIABILITY
+   THIS SOFTWARE, DATASETS, AND ALL ASSOCIATED OUTPUTS ARE PROVIDED "AS IS" 
+   WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED 
+   TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, 
+   ACCURACY, TIMELINESS, OR NON-INFRINGEMENT.
+
+   IN NO EVENT SHALL THE COPYRIGHT HOLDER BE LIABLE FOR ANY FINANCIAL LOSSES, 
+   TRADING DAMAGES, LOST PROFITS, BUSINESS INTERRUPTION, OR ANY DIRECT, INDIRECT, 
+   INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES ARISING IN ANY WAY 
+   OUT OF THE USE OF OR INABILITY TO USE THIS SOFTWARE, EVEN IF ADVISED OF THE 
+   POSSIBILITY OF SUCH DAMAGE. ALL TRADING, INVESTMENT, AND RISK MANAGEMENT 
+   DECISIONS ARE UNDERTAKEN AT THE SOLE DISCRETION AND RISK OF THE USER.
