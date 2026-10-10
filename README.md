@@ -8,6 +8,7 @@
 [![Python](https://img.shields.io/badge/Python-3.12-brightgreen?logo=python)](https://python.org)
 [![Author](https://img.shields.io/badge/Maintained%20by-Babak-black?logo=github)](https://github.com/babaksh)
 [![Security Scan](https://github.com/babaksh/PDFtoAgent/actions/workflows/security-scan.yml/badge.svg)](https://github.com/babaksh/PDFtoAgent/actions/workflows/security-scan.yml)
+[![HOL Guard](https://img.shields.io/endpoint?url=https%3A%2F%2Fhol.org%2Fapi%2Fregistry%2Fbadges%2Fplugin%3Fslug%3Dbabaksh%252Fpdftoagent%26metric%3Dtrust)](https://hol.org/registry/plugins/babaksh%2Fpdftoagent)
 [![Zero-Trust](https://img.shields.io/badge/Verification-Zero--Trust%20Docker%20Sandbox-success)]()
 [![License](https://img.shields.io/badge/License-Community%20(Non--Commercial)-blue)](LICENSE)
 [![Showcase](https://img.shields.io/badge/Showcase-Public%20Domain%20(1922)-orange)]()
