@@ -1,0 +1,13 @@
+{
+  "name": "pdftoagent-hamilton",
+  "version": "1.0.0",
+  "description": "Turnkey FastMCP server bundling 100+ deterministic Dow Theory trading tools, domain skills, and vector RAG.",
+  "author": {
+    "name": "Babak",
+    "url": "https://github.com/babaksh"
+  },
+  "homepage": "https://github.com/babaksh/PDFtoAgent",
+  "repository": "https://github.com/babaksh/PDFtoAgent",
+  "license": "Community (Non-Commercial)",
+  "keywords": ["mcp", "fastmcp", "dow-theory", "trading", "quantitative-analysis", "rag"]
+}

@@ -23,3 +23,4 @@ We will acknowledge receipt within 48 hours and work on a fix promptly.
 | Version | Supported          |
 | ------- | ------------------ |
 | latest  | :white_check_mark: |
+
