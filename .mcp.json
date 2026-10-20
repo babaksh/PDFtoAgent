@@ -1,9 +1,12 @@
 {
   "mcpServers": {
     "Stock_Market_Barometer_Hamilton": {
-      "url": "http://127.0.0.1:8765/mcp",
-      "transport": "streamable-http"
+      "command": "python",
+      "args": [
+        "-m",
+        "mcp_server.server"
+      ],
+      "url": "http://127.0.0.1:8765/mcp"
     }
   }
 }
-
