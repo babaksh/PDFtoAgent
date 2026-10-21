@@ -1,0 +1,19 @@
+{
+  "name": "babaksh",
+  "plugins": [
+    {
+      "name": "pdftoagent-hamilton",
+      "description": "Turnkey FastMCP server bundling 100+ deterministic Dow Theory trading tools, domain skills, and vector RAG.",
+      "category": "Finance & Trading",
+      "source": {
+        "source": "local",
+        "path": "./"
+      },
+      "policy": {
+        "installation": "available",
+        "authentication": "none",
+        "category": "Finance & Trading"
+      }
+    }
+  ]
+}

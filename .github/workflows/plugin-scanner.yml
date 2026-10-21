@@ -22,3 +22,4 @@ jobs:
         uses: hashgraph-online/ai-plugin-scanner-action@7711de3234c244b562519720ef749f4b432b69be # v1.2.795
         with:
           path: '.'
+
