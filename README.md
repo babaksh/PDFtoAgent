@@ -16,13 +16,11 @@
 ---
 
 <p align="center">
-  <img src="assets/pdftoagent-banner.png" alt="PDFtoAgent - Turn PDFs into Agents" width="100%">
-</p>
-
-<p align="center">
-  <video src="https://github.com/user-attachments/assets/bb0d6034-e91c-4b7e-a44a-1750fe6e5005" controls width="100%"></video>
+  <a href="https://github.com/babaksh/PDFtoAgent/blob/main/assets/pdftoagent-showcase.mp4" target="_blank">
+    <img src="assets/pdftoagent-thumbnail.png" alt="PDFtoAgent Video Walkthrough" width="100%">
+  </a>
   <br>
-  <sub>🎬 <b>Interactive Showcase (1m 24s):</b> Play the demo video above or <a href="https://github.com/babaksh/PDFtoAgent/blob/main/assets/pdftoagent-showcase.mp4">open the GitHub streaming player</a>.</sub>
+  <sub>🎬 <b>Click image to play video walkthrough (1m 24s)</b> — streams directly online in GitHub video player</sub>
 </p>
 
 ---
