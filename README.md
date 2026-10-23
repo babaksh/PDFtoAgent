@@ -15,6 +15,16 @@
 
 ---
 
+<p align="center">
+  <a href="https://github.com/babaksh/PDFtoAgent/raw/main/assets/pdftoagent-showcase.mp4">
+    <img src="assets/pdftoagent-showcase-thumbnail.png" alt="PDFtoAgent Video Showcase" width="850">
+  </a>
+  <br>
+  <sub>🎬 <b>Watch the Project Overview (1:24):</b> Click the preview above to watch the walkthrough or <a href="https://github.com/babaksh/PDFtoAgent/raw/main/assets/pdftoagent-showcase.mp4">stream / download the MP4 file directly</a>.</sub>
+</p>
+
+---
+
 ## 💡 The Paradigm Shift: Why Plain RAG Fails
 
 Traditional **Retrieval-Augmented Generation (RAG)** turns books into static text chunks. When you ask an ordinary RAG system to evaluate mathematical rules or multi-step algorithmic strategies, it resorts to **probabilistic token guessing**—frequently hallucinating calculations, miscalculating percentages, and failing to execute rigorous domain procedures.
