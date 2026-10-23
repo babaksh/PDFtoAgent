@@ -16,11 +16,11 @@
 ---
 
 <p align="center">
-  <a href="https://github.com/babaksh/PDFtoAgent/blob/main/assets/pdftoagent-showcase.mp4" target="_blank">
+  <a href="https://www.youtube.com/watch?v=5ytxQepI5mY" target="_blank">
     <img src="assets/pdftoagent-thumbnail.png" alt="PDFtoAgent Video Walkthrough" width="100%">
   </a>
   <br>
-  <sub>🎬 <b>Click image to play video walkthrough (1m 24s)</b> — streams directly online in GitHub video player</sub>
+  <sub>🎬 <b>Watch Video Walkthrough (1m 24s):</b> Click the image above to play on YouTube</sub>
 </p>
 
 ---
