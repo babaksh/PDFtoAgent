@@ -1,6 +1,6 @@
 # 📘 PDFtoAgent 🤖
 
-> **Turn domain literature into executable AI Agents with deterministic Python tools served over MCP — available as a Zero-Docker Windows Portable package & Docker container.**
+> **Turn domain literature into reusable AI-agent capabilities: searchable knowledge, domain guidance, and tested Python tools delivered over MCP. Try the pre-built Hamilton showcase with Windows Portable or Docker.**
 
 [![Portable Windows](https://img.shields.io/badge/Windows%20Portable-Zero--Docker%20.zip-brightgreen?logo=windows)](https://github.com/babaksh/PDFtoAgent/raw/main/dist/PDFtoAgent-Portable-stock-market-barometer-hamilton.zip)
 [![Docker Hub](https://img.shields.io/badge/Docker%20Hub-babak60-blue?logo=docker)](https://hub.docker.com/u/babak60)
@@ -11,7 +11,7 @@
 [![HOL Guard](https://img.shields.io/endpoint?url=https%3A%2F%2Fhol.org%2Fapi%2Fregistry%2Fbadges%2Fplugin%3Fslug%3Dbabaksh%252Fpdftoagent%26metric%3Dtrust)](https://hol.org/registry/plugins/babaksh%2Fpdftoagent)
 [![Zero-Trust](https://img.shields.io/badge/Verification-Zero--Trust%20Docker%20Sandbox-success)]()
 [![License](https://img.shields.io/badge/License-Community%20(Non--Commercial)-blue)](LICENSE)
-[![Showcase](https://img.shields.io/badge/Showcase-Public%20Domain%20(1922)-orange)]()
+[![Showcase](https://img.shields.io/badge/Showcase-Hamilton%20Dow%20Theory-orange)](#-pre-built-showcase-william-peter-hamilton-dow-theory)
 
 ---
 
@@ -25,76 +25,74 @@
 
 ---
 
-## 💡 The Paradigm Shift: Why Plain RAG Fails
+## What You Can Try Here
 
-Traditional **Retrieval-Augmented Generation (RAG)** turns books into static text chunks. When you ask an ordinary RAG system to evaluate mathematical rules or multi-step algorithmic strategies, it resorts to **probabilistic token guessing**—frequently hallucinating calculations, miscalculating percentages, and failing to execute rigorous domain procedures.
+This repository distributes a **pre-built Hamilton Dow-Theory MCP agent**, a sample dataset, a video walkthrough, and connection instructions. You can download and evaluate that agent under the [Community & Research License](LICENSE).
 
-**PDFtoAgent** solves this by transforming technical literature into a cohesive **Triad-Architecture MCP Server (RAG + Domain Skill + Deterministic Tools)**:
+The **PDF-to-agent conversion engine and its authoring UI are not included in this repository**. Running the Hamilton package does not upload or compile another PDF. For custom document conversion and deployment, see [Custom Compilation](#-enterprise-solutions--custom-compilation).
 
-1. 📚 **Chapter-Level Vector RAG:** Semantic search with page citations, tables, and book figures/charts.
-2. 🧠 **Codified Domain Skill (`SKILL.md`):** Procedural guidelines, decision trees, and expert system instructions.
-3. ⚙️ **Deterministic Python Tools:** Verified executable algorithms running in sandboxes with zero math hallucinations.
+## 💡 From Retrieved Text to Executable Procedures
 
-```
-┌────────────────────────────────────────────────────────────────────────┐
-│                      ORDINARY RAG vs PDFTOAGENT                        │
-├────────────────────────────────────────────────────────────────────────┤
-│        Traditional RAG               PDFtoAgent Unified MCP Agent      │
-│        (Text Chunks Only)            (Vector RAG + Skill + Tools)      │
-├────────────────────────────────────────────────────────────────────────┤
-│ ❌ Probabilistic word guessing ✅ Deterministic Python code execution │
-│ ❌ Frequent calculation errors ✅ Exact mathematical computation      │
-│ ❌ No procedural guidance      ✅ Codified Domain Skill (SKILL.md)    │
-│ ❌ Blind trust in model output ✅ Zero-trust Docker sandbox gate      │
-│ ❌ Context window overflows    ✅ Progressive Disclosure Tool Router  │
-│ ❌ Opaque, unverified answers  ✅ Exact chapter & page provenance     │
-└────────────────────────────────────────────────────────────────────────┘
-```
+Retrieval helps an AI assistant find relevant passages. Calculations and operational procedures also need explicit inputs, executable logic, and evidence that the implementation follows the source. PDFtoAgent brings these together in a **RAG + Domain Skill + Tools** package:
+
+1. 📚 **Chapter-Level Vector RAG:** Semantic search with chapter/page references and available figures or tables.
+2. 🧠 **Domain Skill (`SKILL.md`):** Guidance for applying source-supported procedures and interpreting their limitations.
+3. ⚙️ **Python Tools:** Repeatable calculations and procedures, checked during generation with sandbox execution and source-based expectations.
+
+| Capability | What the package provides |
+|---|---|
+| Source lookup | Searchable book knowledge and references |
+| Procedure guidance | Domain skill and tool documentation |
+| Computation | Python functions with explicit inputs and outputs |
+| Validation | Generation-time execution checks and source-fidelity review |
+| Tool discovery | A progressive-disclosure router for large tool catalogs |
+
+Deterministic execution makes a calculation repeatable; it does not prove that its formula, assumptions, or domain interpretation are correct for every input. Validation covers the checks performed, and documented assumptions still need review.
 
 ---
 
-## 🏛️ The Engine: 4-Tier Zero-Trust Architecture
+## 🏛️ The Engine: Five-Tier Validation
 
-PDFtoAgent employs a multi-tier verification pipeline to ensure every synthesized tool is mathematically sound, resilient to edge cases, and strictly grounded in the source book:
+The current authoring pipeline coordinates five tiers. This describes the latest engine; the downloadable Hamilton package is an existing showcase and has not been regenerated by this documentation update.
 
+```text
+Domain PDF
+  → Phase 1: ingestion, chapter Markdown, figures and source references
+  → Phase 2: tool generation and review
+      Tier 1: Planner + pre-build Value Gate
+      Tier 2: Agent Writer + Docker Sandbox Gate
+      Tier 3: Deterministic Robustness Gate (no LLM tokens)
+      Tier 4: Independent LLM Judge (implementation vs source contract)
+      Tier 5: Redundancy + Catalog Integrity Audit (operator advice)
+  → Phase 3: domain skill, knowledge store and MCP tool router
+  → Distribution: Windows Portable or Docker
 ```
-                  Domain PDF (e.g., 1922 Dow Theory)
-                                  │
-    ┌─────────────────────────────▼─────────────────────────────┐
-    │  PHASE 1: Ingestion & Knowledge Extraction                │
-    │  Clean Markdown + Multimodal Figures + Page Citations     │
-    └─────────────────────────────┬─────────────────────────────┘
-                                  ▼
-    ┌───────────────────────────────────────────────────────────┐
-    │  PHASE 2: Agentic Tool Synthesis (The 4-Tier Gate)        │
-    │  ├─ Tier-1: Planner & Value Gate (Quoted Evidence Proof)  │
-    │  ├─ Tier-2: Writer & Docker Sandbox (Live Execution)      │
-    │  ├─ Tier-2.5: Adversarial Robustness Gate (Zero tokens)   │
-    │  ├─ Tier-3: Independent LLM Judge (Fidelity vs Source)    │
-    │  └─ Tier-4: Redundancy & Granular Provenance Audit        │
-    └─────────────────────────────┬─────────────────────────────┘
-                                  ▼
-    ┌───────────────────────────────────────────────────────────┐
-    │  PHASE 3: Packaging & Progressive Disclosure MCP Router   │
-    │  SKILL.md + Exact Vector Store + 100+ Python Tools        │
-    └─────────────────────────────┬─────────────────────────────┘
-                                  ▼
-        Dual Distribution: Portable Windows Zip (.bat) & Docker
-```
+
+### How the latest Phase-2 improvements affect generation
+
+- **Capability coverage:** the planner accounts for reusable procedures throughout a chapter. Short formulas can be useful, related variants can share an interface, and narrative material can remain knowledge. Seven tools is a planning preference, not a compulsory count or hard cap.
+- **Practical tests:** compact independent checks cover realistic inputs, relevant boundaries and meaningful parameter changes. Exhaustive API permutations and full-floating-point-range stress campaigns are not required. Ordinary-input errors, wrong formulas and genuine singularity errors still block.
+- **Visible numerical limitations:** an out-of-domain numerical finding becomes an advisory only when the judge explicitly confirms the provided input was correct. Its reason remains visible as `needs-review`, not strong verification.
+- **Fewer repeated checks:** within one chapter run, an unchanged tool's successful gate can be reused during repairs to another tool. Changes to code, tests, source context, contracts, evidence or verification configuration require revalidation. This is not a persistent cache across separate runs.
+- **More reliable evidence:** nested/indexed expected-output paths are resolved, and expected-value caches are separated by tool identity. Failed or explicitly unverified earlier tools are excluded from dependency digests.
+- **Clearer reporting:** coverage, gate outcomes and review findings remain visible. Provenance lists describe source rules and chosen assumptions; their relative lengths are not percentages of correct or source-derived code and do not contribute to value scoring. Unknown model pricing is labeled unknown in the quality report.
+- **Durable chapter logs:** each chapter keeps an append-only CLI log with run identifiers. The book log aggregates chapter histories, and the authoring UI's Execution Stream follows the selected chapter or All Chapters scope.
+
+These controls improve traceability and reduce avoidable repair work. They do not guarantee one-attempt generation, complete semantic coverage or numerical correctness over every possible input.
 
 ---
 
-## 📊 Pre-Built Showcase: William Peter Hamilton (1922 Dow Theory)
+## 📊 Pre-Built Showcase: William Peter Hamilton (Dow Theory)
 
-To demonstrate this architecture, I compiled William Peter Hamilton's 1922 classic, **"The Stock Market Barometer"** (the foundational text of Dow Theory, now in the Public Domain), into a production-ready MCP Agent.
+The Hamilton showcase turns **The Stock Market Barometer** into a downloadable MCP agent for historical and technical research. Its bundled metadata lists **112 domain tools**. The historical package is separate from the latest authoring-engine changes described above.
 
 The delivered package is a turnkey, multi-component showcase:
 
-* 📚 **Full-Book Chapter-by-Chapter Vector RAG:** Comprehensive semantic search across all 24 chapters with exact page-level citations (`sqlite-vec` + local embeddings).
+* 📚 **Full-Book Chapter-by-Chapter Vector RAG:** Semantic search over the packaged chapter knowledge with page-level references (`sqlite-vec` + local embeddings).
 * 🧠 **Specialized Dow Theory Domain Skill (`SKILL.md`):** Deep codified market philosophy, rule interpretation protocols, and procedural decision trees directly distilled from Hamilton's work.
-* ⚙️ **100+ Quantitative Trading Tools:** Verified, deterministic Python calculations including double top/bottom detectors, 3/8ths retracement rules, primary/secondary trend classifiers, line formation breakout tests, and speculative volume balance metrics.
-* 🎛️ **Progressive Disclosure Router:** Exposes only 3 lightweight router meta-tools (`search_tools`, `get_tool`, `run_tool`) so the LLM context window never gets overloaded regardless of tool count.
-* ⚖️ **Public Domain Compliance:** 100% legal, non-infringing, and open for global use under 17 U.S.C. § 105/304.
+* ⚙️ **112 Domain Tools:** Quantitative procedures and interpretive helpers, including double top/bottom detectors, 3/8ths retracement rules, primary/secondary trend classifiers, line formation breakout tests, and speculative volume balance metrics.
+* 🎛️ **Progressive Disclosure Router:** Exposes only 3 lightweight router meta-tools (`search_tools`, `get_tool`, `run_tool`) so a client can discover relevant tools without loading every definition up front.
+* 📋 **Assumptions and Limits:** Parameters such as swing windows and detection tolerances include implementation choices. Interpretive helpers are not source-proven trading rules; tool count and successful execution are not measures of predictive accuracy.
 
 ---
 
@@ -131,7 +129,7 @@ Double-click **`run_server.bat`**. The intelligent PowerShell launcher automates
 * 🔍 **Automatic Ollama CLI Setup:** Checks if Ollama is installed on your PC. If missing, it automatically installs it via the Windows Package Manager (`winget`) or the official CLI installer—no manual hunting for installers needed.
 * 📦 **Automatic Model Verification:** Checks whether the required `nomic-embed-text:v1.5` semantic embedding model is cached locally. If missing, it downloads it directly in your terminal.
 * 🚀 **Background Daemon:** Starts the Ollama service in the background if it is not already running.
-* 🛡️ **Isolated Python Runtime:** Runs from a self-contained, pre-packaged virtual environment with all 100+ Dow Theory calculation tools, SQLite vector store, and FastMCP libraries ready to use.
+* 🛡️ **Bundled Python Runtime:** Runs from a self-contained, pre-packaged virtual environment with all 100+ Dow Theory calculation tools, SQLite vector store, and FastMCP libraries ready to use.
 * 🌐 **Server Online:** Binds strictly to your loopback adapter at `http://127.0.0.1:8765/mcp`.
 
 ```
@@ -151,15 +149,15 @@ Once `run_server.bat` is running, your MCP server is listening at `http://127.0.
 
 👉 Refer to **`README.txt`** inside your extracted folder or see the complete **[Client Connection Guide (CONNECTING_APPS.md)](CONNECTING_APPS.md)** for ready-to-paste JSON configs and UI steps.
 
-#### Step 1.4 (Optional): Zero-RAM Cloud Embeddings Mode
-By default, the server runs completely offline using local Ollama embeddings (~500 MB RAM). If you prefer cloud embeddings with **0 MB local RAM usage**:
+#### Step 1.4 (Optional): Cloud Embeddings Mode
+By default, embeddings use local Ollama. After initial setup, this avoids a remote embedding API. To use cloud embeddings instead of loading the embedding model locally (the server itself still uses memory):
 1. Open `config/.env` inside the portable folder with any text editor.
 2. Set the provider to `nomic`:
    ```env
    EMBEDDING_PROVIDER=nomic
    NOMIC_API_KEY=your_nomic_api_key
    ```
-   *(Nomic Atlas offers 1,000,000 free embedding tokens per month at [nomic.ai](https://nomic.ai)).*
+   *(Check current availability, usage limits and pricing with [Nomic](https://nomic.ai). Cloud embeddings send embedding requests to that provider.)*
 
 ---
 
@@ -175,7 +173,7 @@ You only need to install these two tools once. After this setup, running any age
 1. Download and install **[Docker Desktop](https://www.docker.com/products/docker-desktop/)** for Windows, macOS, or Linux.
 2. Launch Docker Desktop and verify the status icon shows **Engine Running** (green).
 
-> 🛡️ **Container Security & Isolation:** Complete isolation and transparency. All container images in this showcase are automatically audited for vulnerabilities using **Aqua Security Trivy** (see the Security badge above). Furthermore, the container binds strictly to local loopback (`127.0.0.1`), executes under non-root privileges, and never transmits data outside your machine. Within Docker Desktop's interface, you can inspect the **Files** tab to see that all code is quarantined inside the container, view real-time logs, or stop it with a single click.
+> 🛡️ **Container checks:** This repository includes an **Aqua Security Trivy** scan workflow; inspect its results for the relevant image/version. The example launch command publishes the MCP endpoint on local loopback (`127.0.0.1`). Local embeddings use the configured Ollama service; cloud embedding mode uses an external provider. Generation-time Docker validation and the downloadable Portable runtime are different execution environments.
 
 ##### Install Ollama & Pull Embedding Model
 The MCP server uses a local embedding model for semantic knowledge retrieval (RAG) so that **no external API keys or cloud services are required**.
@@ -246,13 +244,13 @@ Please extract and analyze the last 6 months of data using Charles Dow and Willi
 Format the response into an executive dashboard with status badges, numerical swing coordinates, and list the exact calculation tools executed along with their provenance metadata.
 ```
 
-### What Happens Behind the Scenes:
-1. The Agentic App parses the CSV and invokes the Hamilton MCP server.
-2. It executes `bull_bear_higher_high_lower_low_test`, `double_top_bottom_detector`, and `dow_three_movement_classification` inside the Docker container.
-3. It renders a deterministic report with exact calculations:
-   * **Primary Trend:** `BULL` (Latest swing high 85,190 exceeds prior average 83,476 by 2.05%).
-   * **Pattern Alert:** No double top detected within the 1.5% tolerance band.
-   * **Provenance:** Explicitly separates what was derived from Hamilton's 1922 text (`source_grounded`) versus calibrated algorithmic defaults (`model_extrapolated`).
+### What to Inspect in the Result
+
+The connected client discovers applicable tools and supplies the required inputs. Depending on the question, it can use tools such as `bull_bear_higher_high_lower_low_test`, `double_top_bottom_detector`, and `dow_three_movement_classification` through the router.
+
+Review the executed tool names, input data range, chosen swing/tolerance parameters, numerical outputs, and source references. Results depend on the dataset and parameters; this README does not prescribe a fixed BULL/BEAR answer or a guaranteed pattern detection. Some classification tools need caller-supplied context rather than inferring every part of a trading interpretation.
+
+The Python runtime executes locally through whichever delivery method you selected. The connected AI client's own model and data-handling settings are separate from the MCP server.
 
 ---
 
@@ -271,9 +269,9 @@ Format the response into an executive dashboard with status badges, numerical sw
 
 Have proprietary technical manuals, financial underwriting policies, compliance rulebooks, or internal SOPs?
 
-I provide **on-premise, air-gapped deployments** and custom agent compilation services for enterprise clients:
-* **Zero Cloud Leakage:** All processing, verification, and serving occurs entirely within your local or VPC infrastructure.
-* **Deterministic Tool Synthesis:** Turn complex multi-page operational guidelines into verifiable, zero-hallucination computational tools.
+Custom engagements can cover document conversion, tool review, integration and deployment requirements:
+* **Deployment planning:** Discuss local, on-premise or VPC execution, including the selected model, embedding services and any offline requirements. A local MCP endpoint alone does not establish an air-gapped end-to-end workflow.
+* **Tool generation and review:** Turn supported procedures into executable tools with source references, test evidence and documented assumptions.
 * **Contact:** Connect with me for pilot programs and enterprise integrations at [`Babak`](https://github.com/babaksh) on GitHub or open an issue.
 
 ---
@@ -296,11 +294,11 @@ This showcase repository, the sample dataset, and the pre-compiled container ima
 
 ---
 
-## ⚖️ Legal & Compliance Notice
+## ⚖️ Source Material & Reuse
 
-* The pre-built Hamilton agent is derived exclusively from William Peter Hamilton's 1922 publication *The Stock Market Barometer*, which is in the **Public Domain** under U.S. Copyright Law (17 U.S.C. § 105/304).
-* Under **17 U.S.C. § 102(b)**, mathematical procedures, algorithms, systems, and operational methods are excluded from copyright protection. Algorithmic tools generated by PDFtoAgent represent independent, functional software implementations.
-* PDFtoAgent is designed for compiling lawfully acquired internal documentation, proprietary enterprise knowledge, and public domain literature.
+* The showcase references William Peter Hamilton's historical *The Stock Market Barometer*. Source edition, later additions and territorial reuse rights should be checked for the intended use; a publication date is not a blanket worldwide permission statement.
+* The software package is governed by the [Community & Research License](LICENSE). Its availability here does not grant commercial rights beyond those terms.
+* For custom compilation, use documents you own or have the necessary permission to process and distribute. The rights to a source document and to a software package are separate considerations.
 
 ---
 
